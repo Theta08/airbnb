@@ -1,0 +1,337 @@
+/* 초기화 */
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+}
+/*배경,글자,버튼 맞추기*/
+#main-page .main_txt_btn{
+    background: url(img/bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 75vh;
+}
+.main-navi{
+    background-color: white;
+    padding: 0px 80px;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    /* 위에 들러붙게 하기 */
+    position: sticky;
+    top:0;
+}
+.main-navi .logo{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.logo a{
+    
+    text-decoration: none;
+    color: #FF385C;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-bottom: 7px;
+}
+
+.logo i{
+    font-size: 40px;
+    position: relative;
+    top: 6px;
+}
+
+.main-navi .search .button{
+    width: 300px;
+    height: 48px;
+    border-radius: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 15px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    outline: none;
+    font-weight: 700;
+}
+
+.main-navi .search .button:hover{
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 8px;
+}
+
+.main-navi .search .button .rButton{
+    background-color: #FF385C;
+    color: white;
+    border-radius: 50%;
+    padding: 5px 8px;
+}
+
+.main-navi .search .button .rButton i{
+    font-size: 10px;
+}
+
+.main-navi .menu{
+    display: flex;
+    justify-content: center;
+}
+.nav_menu{
+    display: flex;
+}
+.item{
+    padding: 10px;
+}
+.main-navi .menu button{
+    border-radius: 25px;
+    background-color: white;
+    font-size: 1.1rem;
+    border: 1px solid #ddd;
+    margin-left: 10px;
+}
+.main-navi .menu button:hover{
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 8px;
+}
+.nav_menu div:hover{
+    border-radius: 25px;
+    background-color:whitesmoke;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 8px;
+}
+/* img가운데 txt,btn 넣기 */
+/* disply:flex활용을 재대로 못해서 위치 맞춘는거에 고생함 */
+.main_txt_btn{
+    padding: 80px;
+    display: flex;              /*여기*/
+}
+.txt-btn{
+    align-self: center;
+}
+
+.txt_btn_bot{
+    border-radius: 30px;
+    margin: 22px 0px 0px;
+    font-size: 14px;
+    padding: 7px 15px;
+}
+.txt {
+    color: white;
+    font-size: 52px;
+    font-weight: 700;
+}
+
+/* 세션1 */
+.main_section {
+    height: 250px;
+    display: flex;
+}
+
+.grid{
+    display: grid;
+    height: auto;
+    width: 100%;
+    padding: 0px 80px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+    align-self: center;
+}
+
+.tem{
+   display: flex;
+   align-items: center;
+   
+}
+.tem img{
+    border-radius: 15px;
+    height: 64px;
+}
+
+.tem_txt{
+    margin-left: 10px;
+    width:100%;
+    display: grid;
+}
+.tem_txt_h{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* 세션2 */
+.main_section_2{
+    height: auto;
+}
+.main_panel{
+    display: flex;
+    padding: 0px 80px;
+}
+.main_panel .s_main span{
+    font-size:32px;
+    font-weight: auto;
+    line-height: 36px;
+}
+.m_panenel_{
+    margin-top: 80px;
+    margin-bottom: 80px;
+    width: 100%;
+}
+.s_main{
+    padding-bottom: 16px;
+}
+/* flex 조정 */
+.flex{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}  
+/*자리 배치*/
+.flex_1{
+    display: flex;
+}
+
+.flex_1 .home_i img{
+    height: auto;
+}
+.home_i img{
+    border-radius: 10px;
+    width: 98%;
+    object-fit: cover;
+    margin-left: 5px;
+    margin-right:5px;
+}
+.img span{
+    margin-left: 5px;
+}
+/* 이미지 박스 크기 조절 */
+.img{
+    width: 100%;
+}
+.flex .img div{
+    padding: 8px 0px 0px;
+}
+/* 글씨 조정 */
+.li_img_s{
+    font-size: 18px;
+    font-weight: 700;
+}
+/* 세션3 */
+.main_section3{
+    height: auto;
+    padding: 0 80px;
+    background-color: black;
+}
+.main_s3{
+    display: flex;
+    
+}
+.main_s3_peanl{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    color: white;
+}
+
+.s3_flex{
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+.s3_main #s3_h1{
+    font-size:32px;
+    font-weight: 700;
+}
+.s3_main span{
+    font-size: 14px;
+    width: auto;
+}
+.s_flex_1_img_p{
+    padding-top: 8px;
+}
+#margin_span{
+    margin-top: 4px;
+}
+/* 세션4 */
+.main_section4{
+    height: auto;
+    padding: 0px 80px;
+}
+.main_s4_peanl{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+/* end */
+.main_end{
+    border-top: 1px solid  #dad7d7 ;
+    background-color: whitesmoke;
+    height: auto;
+    padding: 0px 80px;
+}
+.main_e_panel{
+    width: 100%;
+}
+
+.main_e_panel{
+    margin: 0px -12px;
+    padding: 48px 0px;
+    width: 100%;
+}
+.e_end{
+    display: flex;
+}
+
+.e_end section{
+    width: 100%;
+    padding: 0px 12px;
+}
+.end_ul li{
+    margin-top: 16px;
+    font-size: 14px;
+    list-style-type: none;
+}
+.h4{
+    font-size: 12px;
+}
+.end_logo{
+    border-top: 1px solid  #dad7d7 ;
+    width: 100%;
+    padding: 24px 0px;
+    align-content: center;
+}
+
+.e_logo_p{
+    display: flex;
+}
+.e_logo_1{
+    font-size: 14px;
+    margin-right: 20px;
+    flex: 2.5;
+}
+.e_logo_2{
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    width: auto;
+}
+
+.e_logo_3_1{
+    width: 100%;
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    
+}
+.e_logo_3_1 i{
+    align-self: center;
+}
+.e_logo_3_2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    margin-left: 32px;
+    font-size: 1.1rem;
+}
+
